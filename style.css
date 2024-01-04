@@ -1,0 +1,160 @@
+:root {
+	font-family: 'roboto', sans-serif;
+}
+body {
+	background-color: #202124;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#container {
+	display: grid;
+	grid-template-columns: 1fr;
+	border: 5px solid blue;
+	padding: 20px;
+}
+
+.colorSquare {
+	height: 30px;
+	width: 30px;
+}
+#colorDialog {
+	display: flex;
+	border: 1px solid black;
+}
+input {
+	border: none;
+	appearance: none;
+	outline: none;
+	background: none;
+}
+
+dialog {
+	outline: none;
+	border-radius: 10px;
+	padding: 5px;
+}
+svg {
+	/* margin: 8px 8px 3px 8px; */
+	margin-bottom: 2px;
+	height: 18px;
+	width: 18px;
+	fill: #898989;
+	justify-self: center;
+}
+/* #pallete {
+	fill: #898989;
+} */
+#palletePath,
+#trashcanPath {
+	transform: scale(0.75);
+}
+#header {
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+}
+#creatorContainer {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #5f6368;
+	border-radius: 8px;
+	padding: 5px;
+	margin: 10px 0 20px 0;
+	min-width: 300px;
+	box-shadow: 0 0 10px;
+}
+#noteToolsContainer {
+	display: grid;
+	grid-template-columns: 1fr 30px 30px;
+	align-items: center;
+	margin: 0 3px 7px 7px;
+}
+#creatorToolsContainer {
+	display: flex;
+	justify-content: flex-end;
+	padding: 5px;
+}
+#creatorTitle {
+	width: 90%;
+	margin: 3% 5% 0 5%;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #b7b7b7;
+	outline: none;
+	padding: 0;
+	border: 0;
+	overflow-y: hidden;
+}
+#creatorContent {
+	font-size: 0.875rem;
+	color: #dcdcdc;
+	width: 90%;
+	margin: 3% 5% 0 5%;
+	color: #b7b7b7;
+	outline: none;
+	padding: 0;
+	border: 0;
+}
+#saveNoteButton {
+	color: #959595;
+	cursor: pointer;
+}
+#baseDiv {
+	border-radius: 8px;
+	border: 0.5px solid #5f6368;
+	box-sizing: border-box;
+}
+#titleTextarea {
+	width: 90%;
+	margin: 6% 5% 0 5%;
+	/* background-color: transparent; */
+	outline: none;
+	padding: 0;
+	border: 0;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #b7b7b7;
+	resize: none;
+}
+#contentTextarea {
+	width: 90%;
+	margin: 3% 5% 3% 5%;
+	font-size: 0.875rem;
+	color: #dcdcdc;
+	background-color: transparent;
+	display: block;
+	outline: none;
+	resize: none;
+	padding: 0;
+	border: 0;
+}
+
+.notesContainer {
+	width: 70vw;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-gap: 10px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+textarea {
+	font-size: 1rem;
+	color: #dcdcdc;
+	background-color: transparent;
+	display: block;
+	outline: none;
+	resize: none;
+	padding: 0;
+}
+#datePicker {
+	color: #898989;
+}
+
+/* svg,
+#datePicker {
+	visibility: hidden;
+} */
